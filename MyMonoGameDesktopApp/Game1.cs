@@ -124,7 +124,7 @@ namespace MyMonoGameDesktopApp
             //
 
             debrisTimer--;
-            if (debris.Count <= 20 && debrisTimer >= 0)
+            if (debris.Count <= 20 && debrisTimer <= 0)
             {
                 debrisTimer = 60;
                 debris.Add(new Rectangle(0, 100, debrisWidth, debrisHeight));
